@@ -7,7 +7,7 @@ export default function Navbar() {
       
       <div className="flex items-center gap-2">
         <Image src="/healium-logo.png" alt="logo" width={40} height={40} />
-        <span className="font-semibold text-lg text-">Healium Intelliscan</span>
+        <span className="font-semibold text-lg text-blue-300">Healium Intelliscan</span>
       </div>
 
       <div className="hidden md:flex gap-8 text-sm font-medium">

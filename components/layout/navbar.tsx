@@ -6,8 +6,13 @@ export default function Navbar() {
     <nav className="flex justify-between items-center px-8 py-4 border-b bg-black">
       
       <div className="flex items-center gap-2">
-        <Image src="/healium-logo.png" alt="logo" width={40} height={40} />
-        <span className="font-semibold text-lg text-blue-300">Healium Intelliscan</span>
+        <Image 
+        src="/healium-intelliscan-logo.png" 
+        alt="Healium Logo" 
+        width={140} 
+        height={40}
+        className ="cursor-pointer"/>
+        
       </div>
 
       <div className="hidden md:flex gap-8 text-sm font-medium">

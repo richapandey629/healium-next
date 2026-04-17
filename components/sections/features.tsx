@@ -4,8 +4,10 @@ export default function Features() {
   return (
     <section className="py-20 px-6 text-center bg-black">
       
-      <h2 className="text-3xl font-bold mb-12 text-blue-400">
-        Developing Solutions for Global CKD Epidemic
+      <h2 className="text-2xl font-bold mb-12 text-white">Developing Solutions for{" "}
+          <span className="text-[rgb(81,122,249)] text-3xl">
+         Global {" "}
+          <span className="text-sky-400 text-3xl">CKD Epidemic</span> </span>
       </h2>
 
       <div className="grid md:grid-cols-3 gap-10">

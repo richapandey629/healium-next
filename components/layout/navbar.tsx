@@ -22,7 +22,9 @@ export default function Navbar() {
         <a href="#" className="hover:text-gray-400 text-white">Careers</a>
       </div>
 
-      <Button>Request Demo</Button>
+       <Button variant="default" aria-label="Submit" className=" px-3 py-3 bg-sky-400 cursor-pointer hover:bg-[rgb(81,122,249)]">
+            Request Demo
+          </Button>
     </nav>
   )
 }

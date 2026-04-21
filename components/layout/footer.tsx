@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12 px-6">
+    <footer className="bg-black text-white py-20 md:py-28 px-6">
       
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+      <div className="xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         
         
         <div>
@@ -15,13 +15,23 @@ export default function Footer() {
             height={40} 
           />
 
-          <div className="mt-6 text-sm text-gray-400">
-            <p className="font-semibold text-white">USA</p>
-            <p>26 Broadway</p>
+          <div className="space-y-6 text-sm text-gray-400">
 
-            <p className="mt-4 font-semibold text-white">Singapore</p>
-            <p>23 West Coast Crescent</p>
+          <div>
+            <p className="text-white font-semibold">USA</p>
+            <p>26 Broadway</p>
+            <p>Suite 934-G68</p>
+            <p>New York, NY 10004 USA</p>
           </div>
+
+          <div>
+            <p className="text-white font-semibold">SINGAPORE</p>
+            <p>23 West Coast Crescent</p>
+            <p>#14-07 Blue Horizon</p>
+            <p>Singapore 128046</p>
+          </div>
+
+        </div>
         </div>
 
         {/* RIGHT */}

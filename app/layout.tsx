@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { Ubuntu } from "next/font/google"
 
+
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+})
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`${inter.className} min-h-full flex flex-col`}>
+      <body className={`${ubuntu.className} min-h-full flex flex-col`}>
         {children}
       </body>
     </html>

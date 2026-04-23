@@ -1,34 +1,56 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function Navbar() {
-  return (
-    <nav className="flex justify-between items-center px-8 py-4 border-b bg-black">
-      
-      <div className="flex items-center gap-2">
-        <Image 
-        src="/healium-intelliscan-logo.png" 
-        alt="Healium Logo" 
-        width={140} 
-        height={40}
-        className ="cursor-pointer"/>
-        
-      </div>
 
-      <div className="hidden md:flex gap-8 text-sm font-medium">
-        <a href="/" className="hover:text-gray-400 text-white">Home</a>
-        <a href="/about" className="hover:text-gray-400 text-white">About Us</a>
-        <a href="/contact" className="hover:text-gray-400 text-white">Contact Us</a>
-        <a href="/careers" className="hover:text-gray-400 text-white">Careers</a>
-      </div>
-      <div className="md:hidden text-white text-2xl cursor-pointer">
-          ☰
+  const [open, setOpen] = useState(false)
+
+  return (
+    <nav className="bg-black border-b border-gray-800">
+
+      <div className="flex justify-between items-center px-6 py-4">
+
+        {/* LOGO */}
+        <Image src="/healium-intelliscan-logo.png" width={140} height={40} alt="logo" />
+
+        {/* DESKTOP MENU */}
+        <div className="hidden md:flex gap-8 text-sm text-white">
+          <Link href="/">Home</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/contact">Contact Us</Link>
+          <Link href="/careers">Careers</Link>
         </div>
 
-       <Button variant="default" aria-label="Submit" className=" px-3 py-3 bg-sky-400 cursor-pointer hover:bg-[rgb(81,122,249)]">
+        {/* RIGHT */}
+        <div className="flex items-center gap-4">
+
+          <Button className="hidden md:block bg-sky-400 hover:bg-[rgb(81,122,249)]">
             Request Demo
           </Button>
+
+          {/* HAMBURGER */}
+          <div onClick={()=>setOpen(!open)} className="md:hidden cursor-pointer text-2xl">
+            ☰
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden flex flex-col gap-4 px-6 pb-6 text-sm">
+          <Link href="/">Home</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/contact">Contact Us</Link>
+          <Link href="/careers">Careers</Link>
+        </div>
+      )}
+
     </nav>
   )
 }

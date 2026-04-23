@@ -71,7 +71,7 @@ export default function ContactPage() {
 
           {/* BUTTON */}
           <div className = "flex justify-center">
-          <Button variant = "default" className="bg-sky-400 px-6 py-6 items-center rounded-md text-black hover:bg-[rgb(81,122,249)] ">
+          <Button variant = "default" className="bg-sky-400 px-6 py-6 items-center rounded-md text-white hover:bg-[rgb(81,122,249)] cursor-pointer ">
             Submit
           </Button>
           </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
           />
         </div>
 
-        <button className="mt-6 bg-sky-400 px-6 py-3 rounded-md text-black">
+        <button className="mt-6 bg-sky-400 px-6 py-3 rounded-md  text-white hover:bg-[rgb(81,122,249)] cursor-pointer ">
           Request Demo
         </button>
 

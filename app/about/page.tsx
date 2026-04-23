@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/navbar"
 import Footer from "@/components/layout/footer"
 import Image from "next/image"
-import { ArrowUpRight, Lightbulb, DollarSign, ThumbsUp, Award } from "lucide-react"
+import { ArrowUpRight, Lightbulb, CircleDollarSign, ThumbsUp, Award } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -57,10 +57,10 @@ export default function AboutPage() {
             {/* ITEM 1 */}
             <div className="flex gap-6 items-start relative">
               <div className="bg-zinc-900 p-3 rounded-lg z-10">
-                <ArrowUpRight className="w-5 h-5 text-gray-300" />
+                <ArrowUpRight className="w-8 h-8 text-gray-300" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs">2020</p>
+                <p className="text-gray-400 text-xs mb-2">2020</p>
                 <h3 className="text-white font-semibold">
                   The Dawn of Innovation
                 </h3>
@@ -73,10 +73,10 @@ export default function AboutPage() {
             {/* ITEM 2 */}
             <div className="flex gap-6 items-start relative">
               <div className="bg-zinc-900 p-3 rounded-lg z-10">
-                <Lightbulb className="w-5 h-5 text-gray-300" />
+                <Lightbulb className="w-8 h-8 text-gray-300" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs">2021</p>
+                <p className="text-gray-400 text-xs mb-2">2021</p>
                 <h3 className="text-white font-semibold">
                   Setting New Standards
                 </h3>
@@ -89,10 +89,10 @@ export default function AboutPage() {
             {/* ITEM 3 */}
             <div className="flex gap-6 items-start relative">
               <div className="bg-zinc-900 p-3 rounded-lg z-10">
-                <DollarSign className="w-5 h-5 text-gray-300" />
+                <CircleDollarSign className="w-8 h-8 text-gray-300" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs">2022</p>
+                <p className="text-gray-400 text-xs mb-2">2022</p>
                 <h3 className="text-white font-semibold">
                   Seizing Success
                 </h3>
@@ -105,10 +105,10 @@ export default function AboutPage() {
             {/* ITEM 4 */}
             <div className="flex gap-6 items-start relative">
               <div className="bg-zinc-900 p-3 rounded-lg z-10">
-                <ThumbsUp className="w-5 h-5 text-gray-300" />
+                <ThumbsUp className="w-8 h-8 text-gray-300" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs">2023</p>
+                <p className="text-gray-400 text-xs mb-2">2023</p>
                 <h3 className="text-white font-semibold">
                   Pioneering Precision
                 </h3>
@@ -121,10 +121,10 @@ export default function AboutPage() {
             {/* ITEM 5 */}
             <div className="flex gap-6 items-start relative">
               <div className="bg-zinc-900 p-3 rounded-lg z-10">
-                <Award className="w-5 h-5 text-gray-300" />
+                <Award className="w-8 h-8 text-gray-300" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs">2024</p>
+                <p className="text-gray-400 text-xs mb-2">2024</p>
                 <h3 className="text-white font-semibold">
                   Achieving Milestones & Commitment
                 </h3>
@@ -141,7 +141,7 @@ export default function AboutPage() {
 
       {/* VISION */}
       <section className="py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto text-gray-400 text-sm md:text-base">
+        <div className="max-w-3xl mx-auto font-semibold text-gray-100 text-sm md:text-base">
           <h3 className="text-[rgb(81,122,249)] font-semibold mb-2">Our Vision</h3>
           <p>
             At the core of our endeavors lies a commitment to integrating artificial intelligence with medical expertise, propelling the fight against chronic kidney disease into a new era. We strive to craft pioneering AI-ultrasound technologies that transcend conventional boundaries, offering breakthrough precision in CKD detection and management that enhances patient care and outcomes.

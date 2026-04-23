@@ -115,7 +115,7 @@ export default function CareersPage() {
           New York, NY (Hybrid) | Full-time | $150K - $200K
         </p>
       </div>
-      <Button className="bg-sky-400 text-black hover:text-white">
+      <Button className="bg-sky-400 text-black hover:text-white cursor-pointer">
         Apply Now
       </Button>
     </div>
@@ -128,7 +128,7 @@ export default function CareersPage() {
           India (Remote) | Internship | 3 - 6 months
         </p>
       </div>
-      <Button className="bg-sky-400 text-black hover:text-white">
+      <Button className="bg-sky-400 text-black hover:text-white cursor-pointer">
         Apply Now
       </Button>
     </div>
@@ -141,7 +141,7 @@ export default function CareersPage() {
           New York, NY | Full-time | $80K - $110K
         </p>
       </div>
-      <Button className="bg-sky-400 text-black hover:text-white">
+      <Button className="bg-sky-400 text-black hover:text-white cursor-pointer">
         Apply Now
       </Button>
     </div>
@@ -154,7 +154,7 @@ export default function CareersPage() {
           Remote (US) | Full-time | $120K - $160K
         </p>
       </div>
-      <Button className="bg-sky-400 text-black hover:text-white">
+      <Button className="bg-sky-400 text-black hover:text-white cursor-pointer">
         Apply Now
       </Button>
     </div>

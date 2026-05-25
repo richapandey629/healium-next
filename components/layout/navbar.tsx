@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -17,11 +17,23 @@ export default function Navbar() {
       ? "text-white"
       : "text-[#999]"
   } hover:text-white transition-colors `
+
+  useEffect(() => {
+    if (!open) {
+      document.body.style.overflow = ""
+      return
+    }
+
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [open])
   
   return (
     <>
       {/* NAVBAR */}
-      <nav className="bg-black border-black border-b  fixed top-0 left-0 w-full z-[100]">
+      <nav className="bg-black border-black border-b fixed top-0 left-0 w-full z-[100]">
 
         <div className="flex justify-between items-center ml-4 px-6 py-4">
 
@@ -58,9 +70,9 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             
             <Link href="/contact">
-            <Button className="hidden md:block bg-[#3788b9] font-normal cursor-pointer w-[149.4px] h-[42px] text-white px-5 py-2 text-[16px]">
-              Request Demo
-            </Button>
+              <Button className="hidden md:block h-[50px] w-[157.406px] cursor-pointer text-[16px] font-normal">
+                Request Demo
+              </Button>
             </Link>
 
             {/* HAMBURGER */}
@@ -78,56 +90,54 @@ export default function Navbar() {
       {/* NAVBAR OFFSET */}
       <div className="h-[58px]" />
 
-      {/* OVERLAY */}
+      {/* MOBILE FULLSCREEN MENU */}
       <div
-        onClick={() => setOpen(false)}
-        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] transition-all duration-300 ${
-          open ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 md:hidden bg-black z-[120] transform transition-all duration-300 ease-out ${
+          open
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-10 pointer-events-none"
         }`}
-      />
-
-      {/* SIDEBAR */}
-      <div
-        className={`fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-[#0a0a0a] z-[110]
-        transform transition-transform duration-300 ease-out
-        ${open ? "translate-x-0" : "translate-x-full"}`}
       >
+        <div className="flex items-center justify-between px-6 pt-5">
+          <Image
+            src="/healium-intelliscan-logo.png"
+            width={128}
+            height={36}
+            alt="logo"
+            className="w-[128px] h-auto"
+          />
 
-        {/* CLOSE BUTTON */}
-        <div className="flex justify-end p-5">
           <button
             onClick={() => setOpen(false)}
-            className="text-gray-400 hover:text-white transition"
+            className="text-[#0ebaf0] hover:text-[#34c8f3] transition"
+            aria-label="Close menu"
           >
-            <X size={28} />
+            <X size={34} strokeWidth={2.1} />
           </button>
         </div>
 
-        {/* MENU */}
-        <div className="flex flex-col gap-6 px-8 mt-6 text-lg font-medium">
-
-          <Link href="/" onClick={()=>setOpen(false)} className="text-gray-400 hover:text-white transition">
+        <div className="flex flex-col px-5 pt-9 gap-7 text-[18px] leading-none font-normal">
+          <Link href="/" onClick={() => setOpen(false)} className={navLinkClass("/")}>
             Home
           </Link>
 
-          <Link href="/about" onClick={()=>setOpen(false)} className="text-gray-400 hover:text-white transition">
-            About Us
+          <Link href="/about" onClick={() => setOpen(false)} className={navLinkClass("/about")}>
+            About us
           </Link>
 
-          <Link href="/contact" onClick={()=>setOpen(false)} className="text-gray-400 hover:text-white transition">
-            Contact Us
+          <Link href="/contact" onClick={() => setOpen(false)} className={navLinkClass("/contact")}>
+            Contact us
           </Link>
 
-          <Link href="/careers" onClick={()=>setOpen(false)} className="text-gray-400 hover:text-white transition">
+          <Link href="/careers" onClick={() => setOpen(false)} className={navLinkClass("/careers")}>
             Careers
           </Link>
 
-          <Link href="/contact">
-          <Button className="mt-8 bg-[#3788b9] hover:bg-[rgb(81,122,249)] text-white w-full py-3 text-base">
-            Request Demo
-          </Button>
+          <Link href="/contact" onClick={() => setOpen(false)} className="self-center mt-2">
+            <Button className="h-[52px] w-[148px] text-[16px] font-normal">
+              Request Demo
+            </Button>
           </Link>
-
         </div>
       </div>
     </>

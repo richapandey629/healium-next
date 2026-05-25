@@ -2,6 +2,7 @@ import PageHeader from "@/components/pageheader";
 import CTA from "@/components/cta";
 import Navbar from "@/components/layout/navbar"
 import Footer from "@/components/layout/footer"
+import { Button } from "@/components/ui/button"
 
 import {
   Accordion,
@@ -91,10 +92,10 @@ export default function Support() {
                 Got a question about our device? We’ve probably answered it here. If not, please call us:
               </p>
 
-              <button className="mt-6 border border-blue-500 px-4 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-blue-500 hover:text-white transition">
+              <Button className="mt-6 h-10 px-4 text-sm flex items-center gap-2">
                 <Phone size={16} />
                 +1 (302) 310-4257
-              </button>
+              </Button>
             </div>
 
             {/* RIGHT SIDE (ACCORDION) */}

@@ -3,6 +3,7 @@ import Hero from "@/components/sections/hero"
 import Details from "@/components/sections/details"
 import Features from "@/components/sections/features"
 import Footer from "@/components/layout/footer"
+import CTA from "@/components/cta"
 export default function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Details />
+      <CTA/>
       <Footer />
     </>
   )

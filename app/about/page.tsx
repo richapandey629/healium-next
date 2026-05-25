@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/navbar"
 import Footer from "@/components/layout/footer"
 import Image from "next/image"
+import BendingImage from "@/components/ui/bending-image"
 import { ArrowUpRight, Lightbulb, CircleDollarSign, ThumbsUp, Award } from "lucide-react"
 
 export default function AboutPage() {
@@ -10,22 +11,15 @@ export default function AboutPage() {
       <Navbar />
 
       {/* HERO */}
-      <section className="py-20 md:py-28 px-6 text-center"
-              style={{
-            backgroundImage: `
-              linear-gradient(
-                to bottom,
-                rgba(0,0,0,0.95) 0%,
-                rgba(30,69,213,0.55) 50%,
-                rgba(0,0,0,1) 100%
-              ),
-              url('/hexagon.png')
-            `,
-            backgroundRepeat: "repeat",
-            backgroundSize: "75px",
-          }}
-        >
-        <div className="max-w-5xl mx-auto space-y-6">
+      <section className="relative overflow-hidden bg-[#010304] py-12 md:py-16 px-6 text-center">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <div className="absolute inset-0 bg-[url('/noise.jpg')] bg-[length:60px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#010304] from-[23%] to-[#1e45d5cc]"></div>
+          <div className="absolute bottom-0 w-full h-full bg-[url('/hexagon.png')] bg-[length:69px] opacity-85"></div>
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[40rem] h-[2rem] bg-[#0ebaf0] blur-[50px]"></div>
+        </div>
+
+        <div className="relative z-10 max-w-5xl mx-auto space-y-6">
 
           <h1 className="text-[40px] bg-linear-180 from-[white] to-[#a2a2a2] text-transparent bg-clip-text  mb-8 font-semibold leading-snug">
             Shaping the Future of Health: Pioneering AI in the Fight Against CKD
@@ -36,13 +30,14 @@ export default function AboutPage() {
           </p>
 
           {/* IMAGE */}
-          <div className="mt-12 flex justify-center">
-            <Image
+          <div className="mt-12 flex justify-center [perspective:1200px]">
+            <BendingImage
               src="/about.png"
               alt="About collage"
               width={972}
               height={554.391}
-              className="rounded-lg object-contain"
+              containerClassName="rounded-lg"
+              imageClassName="rounded-lg object-contain"
             />
           </div>
 
@@ -166,7 +161,7 @@ export default function AboutPage() {
         {/* VIDEOS */}
         {/* VIDEOS - EXACT WEBFLOW STYLE */}
       <section className="py-20 px-6">
-        <div className="xl mx-auto grid md:grid-cols-2 gap-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
 
           <iframe 
           className="w-full h-auto aspect-video rounded-lg" 

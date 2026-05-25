@@ -1,10 +1,62 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useRef } from "react"
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement | null>(null)
+  const imageWrapRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    let rafId = 0
+
+    const updateMotion = () => {
+      const section = sectionRef.current
+      const imageWrap = imageWrapRef.current
+      if (!section || !imageWrap) return
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        imageWrap.style.transform = "none"
+        return
+      }
+
+      const rect = section.getBoundingClientRect()
+
+      // 0 -> section at top (most bent), 1 -> section scrolled through (straight).
+      const travelRange = Math.max(1, rect.height * 0.9)
+      const rawProgress = -rect.top / travelRange
+      const progress = Math.max(0, Math.min(1, rawProgress))
+
+      // Ease-out makes the card straighten earlier and stay straight longer on down-scroll.
+      const easedProgress = 1 - Math.pow(1 - progress, 2)
+
+      const rotateX = 32 - easedProgress * 32
+      const scale = 0.82 + easedProgress * 0.18
+      const translateY = 66 - easedProgress * 66
+
+      imageWrap.style.transform = `perspective(1200px) rotateX(${rotateX}deg) translateY(${translateY}px) scale(${scale})`
+    }
+
+    const onScrollOrResize = () => {
+      cancelAnimationFrame(rafId)
+      rafId = requestAnimationFrame(updateMotion)
+    }
+
+    updateMotion()
+    window.addEventListener("scroll", onScrollOrResize, { passive: true })
+    window.addEventListener("resize", onScrollOrResize)
+
+    return () => {
+      cancelAnimationFrame(rafId)
+      window.removeEventListener("scroll", onScrollOrResize)
+      window.removeEventListener("resize", onScrollOrResize)
+    }
+  }, [])
+
   return (
-    <section className="relative overflow-hidden bg-[#010304] pt-10 pb-16">
+    <section ref={sectionRef} className="relative overflow-hidden bg-[#010304] pt-10 pb-16">
       {/* Background Layers */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/noise.jpg')] bg-[length:60px]"></div>
@@ -14,8 +66,8 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="text-[40px] md:text-[56px] font-bold bg-gradient-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-4  leading-[1.1]">
+      <div className="relative z-10 max-w-5xl mx-auto px-2 md:px-6 text-center flex flex-col items-center">
+        <h1 className="leading-relaxed md:leading-normal text-[36px] md:text-[56px] font-bold bg-gradient-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-4  leading-[1.1]">
           Revolutionizing Early <br className="hidden md:block"/>
           <span className="bg-gradient-to-r from-[#517af9] to-[#0ebaf0] text-transparent bg-clip-text">
             Detection of Chronic Kidney Disease
@@ -27,12 +79,20 @@ export default function Hero() {
         </p>
         
         <Link href="/contact">
-          <Button className="bg-[#0ebaf0] h-[50px] w-[157.406px] hover:bg-[#517af9] cursor-pointer text-white px-6 py-3 rounded-lg text-[16px] font-normal  border-none transition-colors">
+          <Button className="h-[50px] w-[157.406px] cursor-pointer text-[16px] font-normal">
             Request Demo
           </Button>
         </Link>
         
-        <div className=" w-full h-auto rounded-md overflow-hidden  shadow-2xl mt-5 relative">
+        <div
+          ref={imageWrapRef}
+          className=" w-full h-auto rounded-md overflow-hidden shadow-2xl mt-5 relative"
+          style={{
+            transform: "perspective(1200px) rotateX(32deg) translateY(66px) scale(0.82)",
+            transformOrigin: "top center",
+            willChange: "transform",
+          }}
+        >
           <Image 
             src="/hero.gif" 
             alt="AI-PoCUS Interface" 

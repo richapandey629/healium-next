@@ -6,28 +6,29 @@ export default function Footer() {
   return (
     <footer className="bg-black border-t border-sky-500 text-gray-400">
 
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
 
         {/* TOP */}
-        <div className="flex flex-col md:flex-row justify-between gap-12">
+        <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-12">
 
           {/* LEFT */}
-          <div>
+          <div className="min-w-0">
             <Image
               src="/healium-intelliscan-logo.png"
               width={170}
               height={60}
               alt="logo"
+              className="w-[150px] sm:w-[170px] h-auto"
             />
 
             {/* ADDRESSES */}
-            <div className="flex gap-16 mt-6 text-[16px] text-white">
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-10 md:gap-16 mt-6 text-[15px] sm:text-[16px] text-white">
 
               <div className="flex gap-4 items-start">
-                <div className="w-[34px] h-[34px] rounded-full bg-[#1b1b1b] flex items-center justify-center mt-1">
+                <div className="w-[34px] h-[34px] shrink-0 rounded-full bg-[#1b1b1b] flex items-center justify-center mt-1">
                     <MapPin size={20} className="text-[#999]" />
                   </div>
-                <div>  
+                <div className="min-w-0">  
                 <p className="text-sky-500 text-[17.6px] font-medium">USA</p>
                 <p>26 Broadway</p>
                 <p>Suite 934-G68</p>
@@ -36,10 +37,10 @@ export default function Footer() {
               </div>
 
               <div className="flex gap-4 items-start">
-                <div className="w-[34px] h-[34px] rounded-full bg-[#1b1b1b] flex items-center justify-center mt-1">
+                <div className="w-[34px] h-[34px] shrink-0 rounded-full bg-[#1b1b1b] flex items-center justify-center mt-1">
                     <MapPin size={20} className="text-gray-300" />
                   </div>
-                <div> 
+                <div className="min-w-0"> 
                 <p className="text-sky-500 text-[17.6px] font-medium">SINGAPORE</p>
                 <p>23 West Coast Crescent</p>
                 <p>#14-07 Blue Horizon</p>
@@ -51,7 +52,7 @@ export default function Footer() {
           </div>
 
           {/* RIGHT LINKS */}
-          <div className="text-[16px] underline space-y-2">
+          <div className="text-[15px] sm:text-[16px] underline space-y-2 md:text-right">
 
             <Link href="/" className="block hover:text-white">Home</Link>
 
@@ -78,9 +79,9 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM */}
-        <div className="border-t border-gray-800 mt-10 pt-6 flex justify-between items-center">
+        <div className="border-t border-gray-800 mt-8 sm:mt-10 pt-5 sm:pt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between sm:items-center">
 
-          <p className="text-[16px] text-[#999] mb-4">
+          <p className="text-[14px] sm:text-[16px] text-[#999] order-2 sm:order-1 mb-0">
             © 2026 Healium Intelliscan
           </p>
 
@@ -94,7 +95,7 @@ export default function Footer() {
               width={30}
               height={30}
               alt="linkedin"
-              className="opacity-60 hover:opacity-100 fill-[#999]"
+              className="opacity-60 hover:opacity-100 fill-[#999] order-1 sm:order-2"
               
             />
           </a>
@@ -102,7 +103,7 @@ export default function Footer() {
         </div>
 
         {/* FDA TEXT */}
-        <p className="text-[16px] text-[#999] mt-4">
+        <p className="text-[14px] sm:text-[16px] text-[#999] mt-4 leading-relaxed">
           This device is pending FDA 510(k) clearance and is not yet available for sale in the United States.
         </p>
 

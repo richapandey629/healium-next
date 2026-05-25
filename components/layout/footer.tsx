@@ -78,32 +78,33 @@ export default function Footer() {
 
         </div>
 
+       
         {/* BOTTOM */}
-        <div className="border-t border-gray-800 mt-8 sm:mt-10 pt-5 sm:pt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between sm:items-center">
+        <div className="h-[1px] bg-[#15171f] w-full mt-10 mb-8"></div>
 
-          <p className="text-[14px] sm:text-[16px] text-[#999] order-2 sm:order-1 mb-0">
-            © 2026 Healium Intelliscan
+        <div className="border-t border-[#15171f] mt-8 mb-8 pt-6 flex flex-row justify-between items-center">
+          <p className="text-[16px] text-[#999] m-0">
+            © 2026 Healium Intelliscan 
           </p>
 
           <a
             href="https://www.linkedin.com/company/healiumdigitalhealth/"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex items-center"
           >
             <Image
               src="/linkedin.png"
-              width={30}
-              height={30}
+              width={24}
+              height={24}
               alt="linkedin"
-              className="opacity-60 hover:opacity-100 fill-[#999] order-1 sm:order-2"
-              
+              className="opacity-60 hover:opacity-100 transition-opacity"
             />
           </a>
-
         </div>
 
         {/* FDA TEXT */}
-        <p className="text-[14px] sm:text-[16px] text-[#999] mt-4 leading-relaxed">
+        <p className="text-[14px] sm:text-[16px] text-[#999] mt-4 mb-4 leading-relaxed">
           This device is pending FDA 510(k) clearance and is not yet available for sale in the United States.
         </p>
 

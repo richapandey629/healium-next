@@ -160,7 +160,7 @@ export default function AboutPage() {
 
         {/* VIDEOS */}
         {/* VIDEOS - EXACT WEBFLOW STYLE */}
-      <section className="py-20 px-6">
+      <section className="py-4 px-6 ">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
 
           <iframe 
@@ -183,8 +183,8 @@ export default function AboutPage() {
       </section>
 
       {/* TEAM */}
-      <section className="py-20 px-6 text-center">
-        <h2 className="text-[36px] font-bold mb-16">
+      <section className="py-10 px-6 text-center mb-8">
+        <h2 className="text-[44px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold mb-12 mt-16">
           The Leadership Team
         </h2>
 

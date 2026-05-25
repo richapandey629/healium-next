@@ -35,7 +35,7 @@ export default function Navbar() {
       {/* NAVBAR */}
       <nav className="bg-black border-black border-b fixed top-0 left-0 w-full z-[100]">
 
-        <div className="flex justify-between items-center ml-4 px-6 py-4">
+        <div className="flex justify-between items-center ml-4 px-11 py-4">
 
           {/* LOGO */}
           <Image
@@ -67,7 +67,7 @@ export default function Navbar() {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 px-11">
             
             <Link href="/contact">
               <Button className="hidden md:block h-[50px] w-[157.406px] cursor-pointer text-[16px] font-normal">
@@ -98,7 +98,7 @@ export default function Navbar() {
             : "opacity-0 -translate-y-10 pointer-events-none"
         }`}
       >
-        <div className="flex items-center justify-between px-6 pt-5">
+        <div className="flex items-center justify-between ml-2 px-6 pt-5">
           <Image
             src="/healium-intelliscan-logo.png"
             width={128}

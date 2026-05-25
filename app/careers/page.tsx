@@ -525,13 +525,13 @@ export default function CareersPage() {
           </div>
 
           <div className="relative z-10 px-6 pt-12 md:pt-14 pb-10 md:pb-12">
-            <h1 className="text-[34px] md:text-[62px] leading-[1.1] bg-linear-to-r from-[white] to-[#bfc3ca] text-transparent bg-clip-text font-bold max-w-7xl mx-auto">
+            <h1 className="text-[34px] md:text-[62px] leading-[1.1] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold max-w-7xl mx-auto">
               Build the Future of Healthcare With
               <br className="hidden md:block" />
               Us
             </h1>
 
-            <p className="mt-5 text-[#9ea6b4] max-w-4xl mx-auto text-[15px] md:text-[16px] leading-[1.55] font-medium">
+            <p className="mt-5 text-[#999] max-w-4xl mx-auto text-[18px] md:text-[16px] leading-[1.55] font-medium">
               Join our mission to transform kidney disease detection through AI-powered ultrasound technology. We&apos;re looking for passionate innovators ready to make a real impact.
             </p>
           </div>
@@ -539,18 +539,18 @@ export default function CareersPage() {
           <div className="relative z-10 py-10 md:py-14 px-6">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 text-center">
               <div>
-                <p className="text-[44px] md:text-[58px] leading-none font-bold bg-linear-to-r from-[white] to-[#bfc3ca] text-transparent bg-clip-text">11-50</p>
-                <p className="text-[#9aa0ac] text-[15px] md:text-[16px]">Team Members</p>
+                <p className="text-[44px] md:text-[58px] leading-none font-bold bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-2">11-50</p>
+                <p className="bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text text-[16px] md:text-[16px]">Team Members</p>
               </div>
 
               <div>
-                <p className="text-[44px] md:text-[58px] leading-none font-bold bg-linear-to-r from-[white] to-[#bfc3ca] text-transparent bg-clip-text">2020</p>
-                <p className="text-[#9aa0ac] text-[15px] md:text-[16px]">Founded</p>
+                <p className="text-[44px] md:text-[58px] leading-none font-bold bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-2">2020</p>
+                <p className="bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text text-[16px] md:text-[16px]">Founded</p>
               </div>
 
               <div>
-                <p className="text-[44px] md:text-[58px] leading-none font-bold bg-linear-to-r from-[white] to-[#bfc3ca] text-transparent bg-clip-text">NYC</p>
-                <p className="text-[#9aa0ac] text-[15px] md:text-[16px]">Headquarters</p>
+                <p className="text-[44px] md:text-[58px] leading-none font-bold bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-2">NYC</p>
+                <p className="bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text text-[16px] md:text-[16px]">Headquarters</p>
               </div>
             </div>
           </div>
@@ -565,53 +565,53 @@ export default function CareersPage() {
           </div>
 
           <div className="relative z-10 max-w-6xl mx-auto">
-            <h2 className="text-[34px] md:text-[56px] leading-[1.1] bg-linear-to-r from-[white] to-[#bfc3ca] text-transparent bg-clip-text font-bold mb-4">
+            <h2 className="text-[34px] md:text-[56px] leading-[1.1] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold mb-4">
               Why Join Healium IntelliScan?
             </h2>
 
-            <p className="text-[#98a2b5] text-[15px] md:text-[16px] max-w-3xl mx-auto">
+            <p className="text-[#999] text-[18px] md:text-[18px] max-w-3xl mx-auto">
               Be part of a team that&apos;s dedicated to saving lives through early detection technology
             </p>
 
             <div className="mt-10 grid md:grid-cols-3 gap-5 max-w-6xl mx-auto text-left">
               <div className="rounded-3xl border border-white/70 bg-[#213878]/35 px-6 py-8 backdrop-blur-[1px]">
-                <h3 className="text-[19px] font-semibold bg-linear-to-r from-[white] to-[#cfd3db] text-transparent bg-clip-text">Meaningful Impact</h3>
-                <p className="text-[14px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
+                <h3 className="text-[22px] font-semibold bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text">Meaningful Impact</h3>
+                <p className="text-[16px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
                   Work on technology that directly impacts patient outcomes. Help detect chronic kidney disease before it becomes life-threatening.
                 </p>
               </div>
 
               <div className="rounded-3xl border border-white/70 bg-[#213878]/35 px-6 py-8 backdrop-blur-[1px]">
-                <h3 className="text-[19px] bg-linear-to-r from-[white] to-[#cfd3db] text-transparent bg-clip-text font-semibold">Cutting-Edge Technology</h3>
-                <p className="text-[14px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
+                <h3 className="text-[22px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-semibold">Cutting-Edge Technology</h3>
+                <p className="text-[16px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
                   Work with AI, machine learning, and computer vision to develop next-generation point-of-care ultrasound diagnostics.
                 </p>
               </div>
 
               <div className="rounded-3xl border border-white/70 bg-[#213878]/35 px-6 py-8 backdrop-blur-[1px]">
-                <h3 className="text-[19px] bg-linear-to-r from-[white] to-[#cfd3db] text-transparent bg-clip-text font-semibold">Growth Opportunities</h3>
-                <p className="text-[14px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
+                <h3 className="text-[22px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-semibold">Growth Opportunities</h3>
+                <p className="text-[16px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
                   Join an early-stage startup where your contributions matter. Grow with us as we scale our technology globally.
                 </p>
               </div>
 
               <div className="rounded-3xl border border-white/70 bg-[#213878]/35 px-6 py-8 backdrop-blur-[1px]">
-                <h3 className="text-[19px] bg-linear-to-r from-[white] to-[#cfd3db] text-transparent bg-clip-text font-semibold">Collaborative Culture</h3>
-                <p className="text-[14px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
+                <h3 className="text-[22px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-semibold">Collaborative Culture</h3>
+                <p className="text-[16px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
                   Work alongside experts in healthcare, AI, and medical devices. We value diverse perspectives and open communication.
                 </p>
               </div>
 
               <div className="rounded-3xl border border-white/70 bg-[#213878]/35 px-6 py-8 backdrop-blur-[1px]">
-                <h3 className="text-[19px] bg-linear-to-r from-[white] to-[#cfd3db] text-transparent bg-clip-text font-semibold">Innovation First</h3>
-                <p className="text-[14px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
+                <h3 className="text-[22px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-semibold">Innovation First</h3>
+                <p className="text-[16px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
                   We encourage experimentation and creative problem-solving. Your ideas can shape the future of diagnostic healthcare.
                 </p>
               </div>
 
               <div className="rounded-3xl border border-white/70 bg-[#213878]/35 px-6 py-8 backdrop-blur-[1px]">
-                <h3 className="text-[19px] bg-linear-to-r from-[white] to-[#cfd3db] text-transparent bg-clip-text font-semibold">Healthcare Benefits</h3>
-                <p className="text-[14px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
+                <h3 className="text-[22px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-semibold">Healthcare Benefits</h3>
+                <p className="text-[16px] md:text-[15px] font-light text-[#c8cfdb] mt-3 leading-[1.45]">
                   Comprehensive health coverage, flexible work arrangements, and competitive compensation packages.
                 </p>
               </div>
@@ -619,9 +619,9 @@ export default function CareersPage() {
           </div>
         </section>
 
-        <section className="py-20 px-6 text-center">
-          <h2 className="text-[56px] font-bold mb-5">Open Positions</h2>
-          <p className="text-[#999] text-[16px] mt-2">Find your next opportunity to make a difference</p>
+        <section className="py-10 px-6 text-center">
+          <h2 className="text-[52px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold ">Open Positions</h2>
+          <p className="text-[#999] text-[16px]">Find your next opportunity to make a difference</p>
 
           <div className="mt-6 max-w-[940px] mx-auto text-left">
             {jobsLoading ? (
@@ -641,7 +641,7 @@ export default function CareersPage() {
                 {jobs.map((job) => (
                   <div key={job.id} className="border border-[#908b8b] rounded-xl px-5 md:px-10 py-6 md:py-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sky-400 transition">
                     <div className="w-full min-w-0">
-                      <h3 className="text-[20px] md:text-[24px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-4 font-bold">
+                      <h3 className="text-[24px] md:text-[24px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-4 font-bold">
                         {job.title}
                       </h3>
 
@@ -664,7 +664,7 @@ export default function CareersPage() {
 
                     <Button
                       onClick={() => openApplication(job.slug)}
-                      className="font-semibold cursor-pointer text-[16px] md:text-[19.2px] px-6 py-3 w-full md:w-[147px] h-[48px] md:h-[52.78px] rounded-md"
+                      className="font-semibold cursor-pointer text-[16px] md:text-[19.2px] px-6 py-3 w-full md:w-[147px] h-[48px] md:h-[52.78px] bg-[#3898ec] text-[#0d1b2a] hover:text-white rounded-md"
                     >
                       Apply Now
                     </Button>
@@ -675,7 +675,7 @@ export default function CareersPage() {
           </div>
         </section>
 
-        <section className="py-8 px-4 text-center">
+        <section className=" px-4 text-center">
           <h2 className="text-[56px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold mb-5 font-stretch-100%">
             Don&apos;t See the Right Role?
           </h2>
@@ -686,7 +686,7 @@ export default function CareersPage() {
 
           <Button
             onClick={() => openApplication()}
-            className="mt-5 mb-4 text-[19.2px] w-[216.5px] h-[52.8px] font-semibold cursor-pointer px-6 py-3"
+            className="mt-5 mb-12 text-[19.2px] w-[216.5px] h-[52.8px] font-semibold cursor-pointer px-6 py-3 hover:text-white bg-[#3898ec] text-[#0d1b2a]"
           >
             Send Your Resume
           </Button>

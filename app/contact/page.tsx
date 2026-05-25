@@ -107,12 +107,12 @@ export default function ContactPage() {
 
       {/* HERO */}
       <section className="px-6 py-20 text-center md:py-28">
-        <div className="mx-auto max-w-2xl space-y-4">
+        <div className="mx-auto max-w-2xl space-y-1">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
             Request Demo
           </h1>
 
-          <p className="text-[18px] text-[#999]">
+          <p className="text-[18px] mb-12 text-[#999]">
             Provide us with your details and we will contact you to arrange a demo.
           </p>
 
@@ -190,7 +190,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="h-[42px] w-[149.4px] cursor-pointer text-[16px] font-normal disabled:cursor-not-allowed disabled:opacity-60"
+                  className="h-[50px] w-[101px] cursor-pointer text-[16px] font-normal bg-[#0ebaf0] disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {isSubmitting ? (
                     <span className="inline-flex items-center gap-2">

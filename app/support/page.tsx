@@ -72,7 +72,7 @@ export default function Support() {
 
               <p className="text-sm text-gray-400">Need Help Urgent</p>
 
-              <p className="mt-3 text-sm">
+              <p className="mt-3 text-sm ">
                 Call: +1 (302) 310-4257
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function Support() {
 
             {/* LEFT SIDE */}
             <div>
-              <h2 className="text-5xl font-medium leading-snug">
+              <h2 className="text-4xl font-medium leading-snug">
                 Frequently Asked <br /> Questions
               </h2>
 
@@ -92,10 +92,10 @@ export default function Support() {
                 Got a question about our device? We’ve probably answered it here. If not, please call us:
               </p>
 
-              <Button className="mt-6 h-10 px-4 text-sm flex items-center gap-2">
+              <div className="mt-6 h-10 px-4 p-[10px] border-[4px] border-box border text-[16px] border-[#517af9] flex items-center gap-2">
                 <Phone size={16} />
                 +1 (302) 310-4257
-              </Button>
+              </div>
             </div>
 
             {/* RIGHT SIDE (ACCORDION) */}
@@ -154,7 +154,7 @@ export default function Support() {
                     value={`item-${i}`}
                     className="  bg-[#090913] border border-[#1c1c22] rounded-lg px-4"
                   >
-                    <AccordionTrigger className="text-[16px] text-linear-to-r from-[white] to-[#a2a2a2] text-left font-sans cursor-pointer">
+                    <AccordionTrigger className="text-[16px] font-normal text-linear-to-r from-[white] to-[#a2a2a2] bg-clip-text text-left font-sans cursor-pointer">
                       {item.q}
                     </AccordionTrigger>
 

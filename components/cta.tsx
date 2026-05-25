@@ -16,11 +16,11 @@ export default function CTA() {
       {/* CONTENT */}
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* TEXT */}
-        <h3 className="mx-auto max-w-5xl text-[20px] md:text-[30px] lg:text-[40px] leading-[1.06] font-bold mb-8 md:mb-12">
+        <h3 className="mx-auto max-w-5xl text-[40px] md:text-[40px] lg:text-[40px] leading-[1.06] font-bold mb-8 md:mb-12">
           Learn more about{" "}
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
+          <strong  className="bg-gradient-to-r text-[56px] from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
             Our Solution
-          </span>
+          </strong>
         </h3>
 
         {/* IMAGE */}
@@ -37,7 +37,7 @@ export default function CTA() {
         {/* BUTTON */}
         <div className="my-12">
           <Link href="/contact">
-            <Button className="h-[50px] w-[157.406px] cursor-pointer text-[16px] font-normal">
+            <Button className="h-[50px] w-[157.406px] bg-[#0ebaf0] cursor-pointer text-[16px] px-6 py-3  font-normal">
               Request Demo
             </Button>
           </Link>

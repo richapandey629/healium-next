@@ -6,7 +6,7 @@ import { ArrowUpRight, Lightbulb, CircleDollarSign, ThumbsUp, Award } from "luci
 
 export default function AboutPage() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white ">
 
       <Navbar />
 
@@ -19,28 +19,24 @@ export default function AboutPage() {
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[40rem] h-[2rem] bg-[#0ebaf0] blur-[50px]"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto space-y-6">
-
-          <h1 className="text-[40px] bg-linear-180 from-[white] to-[#a2a2a2] text-transparent bg-clip-text  mb-8 font-semibold leading-snug">
-            Shaping the Future of Health: Pioneering AI in the Fight Against CKD
-          </h1>
-
-          <p className="text-[#999] max-w-[973px] text-center mx-auto text-[16px] font-bold ">
-            Unveiling the potential of AI to transform kidney care, we are dedicated to advancing CKD detection and management for a healthier tomorrow.
-          </p>
-
-          {/* IMAGE */}
-          <div className="mt-12 flex justify-center [perspective:1200px]">
-            <BendingImage
-              src="/about.png"
-              alt="About collage"
-              width={972}
-              height={554.391}
-              containerClassName="rounded-lg"
-              imageClassName="rounded-lg object-contain"
+          <div className="relative z-10 w-full">
+          <div className="max-w-5xl mx-auto space-y-6 px-4">
+            <h1 className="text-[40px] bg-linear-to-r  from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-8 font-semibold leading-snug">
+              Shaping the Future of Health: Pioneering AI in the Fight Against CKD
+            </h1>
+            <p className="text-[#999] text-center mx-auto text-[16px] font-bold">
+              Unveiling the potential of AI to transform kidney care, we are dedicated to advancing CKD detection and management for a healthier tomorrow.
+            </p>
+          </div>
+          <div className="max-w-7xl mx-auto mt-8 flex justify-center px-4">
+            <Image 
+              src="/about.png" 
+              alt="About collage" 
+              width={1232} 
+              height={700} 
+              className="w-full h-auto object-contain rounded-lg" 
             />
           </div>
-
         </div>
       </section>
 

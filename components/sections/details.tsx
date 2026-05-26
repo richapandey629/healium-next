@@ -8,9 +8,9 @@ export default function Details() {
   return (
     <section className="bg-black text-white py-16p md:py-16 px-2">
       <div className="max-w-7xl mx-auto text-center space-y-10">
-        <h2 className="text-[36px] font-bold  mx-auto leading-relaxed mb-10">
-          State-of-the-art algorithms and{" "}
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[40px] font-bold">
+        <h2 className="text-[40px] bg-linear-to-r from-white to-[#a2a2a2] text-transparent bg-clip-text font-bold  mx-auto leading-[1.2] mb-10">
+           State-of-the-art algorithms and <br />
+          <span className="bg-linear-90 from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[56px] font-bold">
             clinically validated digital biomarkers
           </span>
         </h2>
@@ -44,7 +44,7 @@ export default function Details() {
 
         <div className="space-y-2">
           {/* DEVICE  */}
-          <h3 className=" font-bold text-[19.2px]">
+          <h3 className=" font-bold text-[19.2px]  bg-linear-180 from-white to-[#a2a2a2] text-transparent bg-clip-text">
             Healium Ultrasound Device for CKD Detection and Management
           </h3>
 
@@ -129,8 +129,8 @@ export default function Details() {
 
         {/* INVESTORS */}
         <div className="mt-20">
-          <h3 className="text-[40px] font-bold mb-10">
-            Backed by <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl font-bold mb-4">Global Investors</span>
+          <h3 className="text-[40px] font-bold mb-10 bg-linear-to-r from-white to-[#a2a2a2] text-transparent bg-clip-text">
+            Backed by <span className="bg-linear-90 from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl font-bold mb-4">Global Investors</span>
           </h3>
 
           <div className= "flex flex-col items-center md:flex-row flex-wrap justify-center gap-10 opacity-80 hover:opacity-100 h-auto w-auto">

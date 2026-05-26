@@ -80,9 +80,9 @@ export default function Footer() {
 
        
         {/* BOTTOM */}
-        <div className="h-[1px] bg-[#15171f] w-full mt-10 mb-8"></div>
+        
 
-        <div className="border-t border-[#15171f] mt-8 mb-8 pt-6 flex flex-row justify-between items-center">
+        <div className="border-t border-[#15171f] mt-8 mb-8 py-8 flex flex-row justify-between items-center">
           <p className="text-[16px] text-[#999] m-0">
             © 2026 Healium Intelliscan 
           </p>

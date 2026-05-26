@@ -676,7 +676,7 @@ export default function CareersPage() {
         </section>
 
         <section className=" px-4 text-center">
-          <h2 className="text-[56px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold mb-5 font-stretch-100%">
+          <h2 className="text-[56px] bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text font-bold mt-16 mb-5 font-stretch-100%">
             Don&apos;t See the Right Role?
           </h2>
 
@@ -686,7 +686,7 @@ export default function CareersPage() {
 
           <Button
             onClick={() => openApplication()}
-            className="mt-5 mb-12 text-[19.2px] w-[216.5px] h-[52.8px] font-semibold cursor-pointer px-6 py-3 hover:text-white bg-[#3898ec] text-[#0d1b2a]"
+            className="mt-5 mb-24 text-[19.2px] w-[216.5px] h-[52.8px] font-semibold cursor-pointer px-6 py-3 hover:text-white bg-[#3898ec] text-[#0d1b2a]"
           >
             Send Your Resume
           </Button>

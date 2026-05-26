@@ -32,9 +32,9 @@ export default function Hero() {
       // Ease-out makes the card straighten earlier and stay straight longer on down-scroll.
       const easedProgress = 1 - Math.pow(1 - progress, 2)
 
-      const rotateX = 15 - easedProgress * 15
-      const scale = 0.82 + easedProgress * 0.18
-      const translateY = 66 - easedProgress * 66
+      const rotateX = 0 - easedProgress * 0
+      const scale = 0.9 + easedProgress * 0.1
+      const translateY = 40 - easedProgress * 40
 
       imageWrap.style.transform = `perspective(1200px) rotateX(${rotateX}deg) translateY(${translateY}px) scale(${scale})`
     }
@@ -67,10 +67,10 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-2 md:px-6 text-center flex flex-col items-center">
-        <h1 className="leading-relaxed md:leading-normal text-[36px] md:text-[56px] font-bold bg-gradient-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-4  ">
-          Revolutionizing Early <br className="hidden md:block"/>
+        <h1 className="leading-[1.15] md:leading-[1.2] text-[56px] md:text-[56px] font-bold bg-gradient-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text mb-4 tracking-[-0.01em]">
+          Revolutionizing Early {" "} <br className="hidden md:block"/>
           <span className="bg-gradient-to-r from-[#517af9] to-[#0ebaf0] text-transparent bg-clip-text">
-            Detection of Chronic Kidney Disease
+           Detection of Chronic Kidney Disease
           </span>
         </h1>
         
@@ -86,9 +86,9 @@ export default function Hero() {
         
         <div
           ref={imageWrapRef}
-          className=" w-full h-auto rounded-md overflow-hidden shadow-2xl  mb-5 relative"
+          className=" max-w-full w-full h-auto rounded-md overflow-hidden shadow-2xl  mb-5 relative"
           style={{
-            transform: "perspective(1200px) rotateX(15deg) translateY(66px) scale(0.82)",
+            transform: "perspective(1200px) rotateX(0deg) translateY(40px) scale(0.8)",
             transformOrigin: "top center",
             willChange: "transform",
           }}

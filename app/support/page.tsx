@@ -23,7 +23,7 @@ export default function Support() {
       />
 
       <section className="bg-black px-6 py-20 text-white">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-7xl mx-auto space-y-16">
 
           {/* ================= CARDS ================= */}
           <div className="grid md:grid-cols-3 gap-8">
@@ -32,14 +32,14 @@ export default function Support() {
             <div className="bg-linear-135 from-[#0e0e18] to-[#060610] border-[1px] border-[#ffffff1a] p-6 rounded-xl text-center hover:border-blue-500 transition">
 
               <div className="flex justify-center mb-4">
-                <div className="w-18 h-18 rounded-full bg-[#111933] flex items-center justify-center">
-                  <MapPin size={20} className="text-blue-400" />
+                <div className="w-16 h-16 rounded-full bg-[#161622] flex items-center justify-center mb-6">
+                  <MapPin size={35} className="text-blue-400" />
                 </div>
               </div>
 
-              <p className="text-sm text-gray-400">Main Address</p>
+              <p className="text-[20px] font-medium text-[#999]">Main Address</p>
 
-              <p className="mt-3 text-sm leading-relaxed">
+              <p className="mt-3 text-[20px] font-medium text-[#fff] leading-relaxed">
                 26 Broadway Suite 934-G68 <br />
                 New York, NY 10004 USA
               </p>
@@ -49,14 +49,14 @@ export default function Support() {
             <div className="bg-linear-135 from-[#0e0e18] to-[#060610] border-[1px] border-[#ffffff1a] p-6 rounded-xl text-center hover:border-blue-500 transition">
 
               <div className="flex justify-center mb-4">
-                <div className="w-18 h-18 rounded-full bg-[#111933] flex items-center justify-center">
-                  <Mail size={20} className="text-blue-400" />
+                <div className="w-16 h-16 rounded-full bg-[#161622] flex items-center justify-center mb-6">
+                  <Mail size={35} className="text-blue-400" />
                 </div>
               </div>
 
-              <p className="text-sm text-gray-400">Email Address</p>
+              <p className="text-[20px] font-medium text-[#999]">Email Address</p>
 
-              <p className="mt-3 text-sm">
+              <p className="mt-3 text-[20px] font-medium text-[#fff]">
                 info@healiumintelliscan.com
               </p>
             </div>
@@ -65,14 +65,14 @@ export default function Support() {
             <div className="bg-linear-135 from-[#0e0e18] to-[#060610] border-[1px] border-[#ffffff1a] p-6 rounded-xl text-center hover:border-blue-500 transition">
 
               <div className="flex justify-center mb-4">
-                <div className="w-18 h-18 rounded-full bg-[#111933] flex items-center justify-center">
-                  <Phone size={20} className="text-blue-400" />
+                <div className="w-16 h-16 rounded-full bg-[#161622] flex items-center justify-center mb-6">
+                  <Phone size={35} className="text-blue-400" />
                 </div>
               </div>
 
-              <p className="text-sm text-gray-400">Need Help Urgent</p>
+              <p className="text-[20px] font-medium text-[#999]">Need Help Urgent</p>
 
-              <p className="mt-3 text-sm ">
+              <p className="mt-3 text-[20px] font-medium text-[#fff] ">
                 Call: +1 (302) 310-4257
               </p>
             </div>
@@ -80,26 +80,26 @@ export default function Support() {
           </div>
 
           {/* ================= FAQ SECTION ================= */}
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-2 items-start">
 
             {/* LEFT SIDE */}
-            <div>
+            <div className="w-full md:w-[350px] flex-shrink-0">
               <h2 className="text-4xl font-medium leading-snug">
                 Frequently Asked <br /> Questions
               </h2>
 
-              <p className="mt-4 text-[14px] text-gray-400 leading-[22px]">
+              <p className="mt-4 text-[16px] max-w-sm text-[#fff] leading-[22px]">
                 Got a question about our device? We’ve probably answered it here. If not, please call us:
               </p>
 
-              <div className="mt-6 h-10 px-4 p-[10px] border-[4px] border-box border text-[16px] border-[#517af9] flex items-center gap-2">
+              <div className="mt-6 w-fit h-12 px-6 border border-[#517af9] text-[18px] font-medium flex items-center gap-3 rounded-md hover:bg-[#517af9]/10 transition-colors">
                 <Phone size={16} />
                 +1 (302) 310-4257
               </div>
             </div>
 
             {/* RIGHT SIDE (ACCORDION) */}
-            <div>
+            <div className="flex-grow min-w-0 w-full">
 
               <Accordion type="single" collapsible className="space-y-3 ">
 
@@ -152,13 +152,13 @@ export default function Support() {
                   <AccordionItem
                     key={i}
                     value={`item-${i}`}
-                    className="  bg-[#090913] border border-[#1c1c22] rounded-lg px-4"
+                    className="  bg-[#0b0b14] border border-[#1f1f2e] rounded-md px-3 py-1"
                   >
-                    <AccordionTrigger className="text-[16px] font-normal text-linear-to-r from-[white] to-[#a2a2a2] bg-clip-text text-left font-sans cursor-pointer">
+                    <AccordionTrigger className="text-[22.4px] font-normal bg-linear-to-r from-[white] to-[#a2a2a2] text-transparent bg-clip-text  text-left py-2 no-underline">
                       {item.q}
                     </AccordionTrigger>
 
-                    <AccordionContent className=" text-[14px] text-[#999] font-normal  leading-relaxed">
+                    <AccordionContent className=" text-[16px] text-[#999] font-normal  leading-relaxed">
                       {item.a}
                     </AccordionContent>
                   </AccordionItem>

@@ -16,9 +16,9 @@ export default function CTA() {
       {/* CONTENT */}
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* TEXT */}
-        <h3 className="mx-auto max-w-5xl text-[40px] md:text-[40px] lg:text-[40px] leading-[1.06] font-bold mb-8 md:mb-12">
-          Learn more about{" "}
-          <strong  className="bg-gradient-to-r text-[56px] from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
+        <h3 className="mx-auto max-w-5xl text-[40px] bg-linear-to-r from-white to-[#a2a2a2] text-transparent bg-clip-text md:text-[40px] lg:text-[40px] leading-[1.06] font-bold mb-8 md:mb-12">
+          Learn more about{" "} <br/>
+          <strong  className="bg-linear-90 text-[56px] from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
             Our Solution
           </strong>
         </h3>
